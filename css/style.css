@@ -416,12 +416,31 @@ line-height: 47px;
 .block-contact{
     float:left;
     width:50%;
+    margin-top: 20px;
 }
 
 .form-contact-block textarea{
     display: block;
     width: 100%;
     background: #f0f8ff1a;
+}
+
+.form-group, textarea {
+margin-top: 6px;
+margin-bottom: 20px;
+}
+.form-control{
+background: #0000;
+width: 400px;
+line-height: 46px;
+}
+.form-group label, textarea[name="message"]{
+color: #ffffff;
+font-family: 'Alegreya Sans SC', sans-serif;
+font-size: 14px;
+font-weight: 700;
+line-height: 24px;
+text-transform: uppercase;
 }
 /**************************footer*/
 .footer{
