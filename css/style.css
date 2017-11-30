@@ -7,6 +7,8 @@ font-weight: normal;
 font-style: normal;
 
 }
+
+
 @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Cabin+Condensed');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
 
@@ -282,6 +284,18 @@ border: 2px solid #4bcaff;
 .block-content{
     padding: 20px 26px 45px 0;
 }
+.cta-visit-me{
+    width: 185px;
+    padding: 15px 20px;
+    background: #545d68;
+    border: 3px solid #353f46;
+    color: #353f46;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+
+}
 /*******twiter*/
 
 .twitter{
@@ -441,6 +455,19 @@ font-size: 14px;
 font-weight: 700;
 line-height: 24px;
 text-transform: uppercase;
+}
+
+.cta-message{
+    width: 185px;
+    padding: 15px 20px;
+    background: #68b8ff;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+
 }
 /**************************footer*/
 .footer{
