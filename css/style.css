@@ -267,9 +267,10 @@ margin-bottom:10px;
 .tabs li{
 display: inline-block;
 }
-.tab-item li{
-position:relative;
+.tab-item li a{
+    display:block;
 }
+
 .tab-item li:hover:before{
     content:'';
     position:absolute;
@@ -277,7 +278,9 @@ position:relative;
     left: 0;
     right: 0;
     bottom: 0;
+    opacity: 0.4;
     background: #030305cc;
+
 }
 .tab-item li:hover:after{
 /*    content:'';
