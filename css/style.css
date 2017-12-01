@@ -85,12 +85,12 @@ body{
     box-sizing: border-box;
 }
 .clearfix:after {
-content: ".";
-display: block;
-height: 0;
-clear: both;
-visibility: hidden;
-overflow: hidden;
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    overflow: hidden;
 }
 .container{
     max-width: 1200px;
@@ -99,16 +99,31 @@ overflow: hidden;
 .header-wrapper{
     background:url('../img/banner.png') no-repeat center;
     background-size: cover;
-    /*opacity: 0.9;*/
-   /* background-blend-mode: rgba(141, 135, 135, 0.58);*/
+    position:relative;
+    }
+.header-wrapper:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #030305cc;
 }
 .header-overlay{
-  background: #b9b9b980;
+    position: relative;
+}
+#header{
+    position: absolute;
+    width: 100%;
+    content: '';
+    z-index: 2;
 }
 .header{
     background: #04121ab3;
     margin: 0;
     padding: 0;
+
     }
 .header,.header a, .header nav{
     color: #fff;
@@ -164,8 +179,31 @@ nav ul{
     color: #4bcaff;
     border: 2px solid #4bcaff;
 }
+.heading-title{
+    padding: 250px 15px 150px 15px;
+    text-align:center;
+}
+.heading-title h1{
+margin-bottom:10px;
+}
 
+.heading-title h1::before {
+  content: '\201c';
+  top: -12px;
+  left: 0;
+}
+.heading-title p::after {
+  content: '\201d';
+  bottom: -29px;
+  right: 0;
+}
 
+.heading-title h1,.heading-title p{
+   background: #0a141699;
+   padding:0;
+     position: relative;
+
+}
 .heading-title__info{
     color: #ffffff;
     font-family: 'Alegreya Sans SC', sans-serif;
@@ -174,8 +212,8 @@ nav ul{
     line-height: 75px;
     text-transform: uppercase;
     display: inline-block;
-    padding-left: 15px;
-    padding-right: 11px;
+  /*  padding-left: 15px;
+    padding-right: 11px;*/
     }
 
 /******SERVICES********/
@@ -227,9 +265,56 @@ nav ul{
     float: right;
 }
 .tabs li{
-
-/*margin: 0 10px;*/
 display: inline-block;
+}
+.tab-item li{
+position:relative;
+}
+.tab-item li:hover:before{
+    content:'';
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #030305cc;
+}
+.tab-item li:hover:after{
+/*    content:'';
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:url('../img/i-coffee.png') no-repeat center;*/
+}
+.plus{
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 32px;
+    height: 32px;
+}
+.plus:hover:before{
+    content: '';
+    height: 2px;
+    background: #fff;
+    width: 32px;
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+
+}
+.plus:hover:after{
+    content: '';
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(90deg);
 }
 .tabs li a{
 text-decoration:none;
